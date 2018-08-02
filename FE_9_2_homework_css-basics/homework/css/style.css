@@ -34,111 +34,111 @@
 }
 @media screen {
     .thumbnail {
-    border-radius: 50%;
+        border-radius: 50%;
     }
     .box-bg h2:hover {
-    background-color: #2aabd2;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
+        background-color: #2aabd2;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
     }
     p::first-letter {
-    color: #76cdd7;
+        color: #76cdd7;
     }
     p:not(.tm-banner-text) {
-    line-height: 2em;
-    text-indent: 1em;
+        line-height: 2em;
+        text-indent: 1em;
     }
     h2+p {
-    font-style: italic;
+        font-style: italic;
     }
     .blocks > .flex-2-col {
-    display: none;
+        display: none;
     }
     .tm-sidebar,
     .tm-content-box {
-    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
     }
     section,
     .tm-banner {
-    position: relative;
+        position: relative;
     }
     .tm-main-content>section:not(:last-of-type):not(.blocks):before,
     .tm-banner:before {
-    content: "";
-    height: 0;
-    width: 0;
-    border-right: 100px solid transparent; 
-    border-top: 20px solid #2aabd2;
-    position: absolute;
-    top: 0;
-    left: 0;
+        content: "";
+        height: 0;
+        width: 0;
+        border-right: 100px solid transparent; 
+        border-top: 20px solid #2aabd2;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
     #tmCarousel .tm-section-title {
-    color: gainsboro;
-    letter-spacing: 5px;
+        color: gainsboro;
+        letter-spacing: 5px;
     }
     .heading h2 {
-    color: #76cdd7;
-    text-align: center;
+        color: #76cdd7;
+        text-align: center;
     }
     .heading a {
-    color: black;
+        color: black;
     }
     .heading a:visited {
-    color: silver;
+        color: silver;
     }
     .heading a:hover {
-    color: #76cdd7;
-    text-decoration: underline;
-    border-bottom: 1px solid #76cdd7;
+        color: #76cdd7;
+        text-decoration: underline;
+        border-bottom: 1px solid #76cdd7;
     }
     .heading .text::after {
-    color: red;
-    content: "New";
-    font-size: .5em;
-    font-weight: bold;
-    vertical-align: super;
+        color: red;
+        content: "New";
+        font-size: .5em;
+        font-weight: bold;
+        vertical-align: super;
     }
     .blocks .boxes {
-    background-color: #f2f2f2;
-    padding-top: 4px;
+        background-color: #f2f2f2;
+        padding-top: 4px;
     }
     .blocks li:nth-child(odd) {
-    background-color: #f2f2f2;
+        background-color: #f2f2f2;
     }
     .blocks li:nth-child(3n) {
-    border-right: 0;
+        border-right: 0;
     }
     .box h2 {
-    margin-bottom: 14px;
+        margin-bottom: 14px;
     } 
     .box p {
-    text-indent: 0;
+        text-indent: 0;
     }
     .box p::first-letter {
-    color: black;
-    font-size: 2em;
+        color: black;
+        font-size: 2em;
     }
     .tm-nav-item:not(:last-child) {
-    border-bottom: 2px dotted silver;
+        border-bottom: 2px dotted silver;
     }
     #contact .form-control,
     #contact button[type="submit"] {
-    color: red;
+        color: red;
     }
     #contact .mandatory-field {
-    position: relative;
+        position: relative;
     }
     #contact .mandatory-field:after {
-    content: "*";
-    color: red;
-    font-weight: bold;
-    position: absolute;
+        content: "*";
+        color: red;
+        font-weight: bold;
+        position: absolute;
     }
     #contact button[type="submit"]:hover {
-    background-color: #2aabd2;
-    border-color: #2aabd2;
-    color: white;
+        background-color: #2aabd2;
+        border-color: #2aabd2;
+        color: white;
     }
 }
