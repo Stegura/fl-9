@@ -1,0 +1,30 @@
+// Font colors
+$menuTextColor: #76bcd3;
+$toolBarTextColor: #1fbcd3;
+$postDescriprionColor: #159587;
+$postTitleColor: #1697a6;
+$postParagraphColor: #617d8a;
+$titleColor: $toolBarTextColor;
+$paragraphColor: $postParagraphColor;
+$formTitleColor: $toolBarTextColor;
+$formTextColor: #757575;
+$formBtnColor: #fff;
+$footerTextColor: #617d8a;
+
+// Border and background colors
+$mainBgColor: #fff;
+$menuBorderColor: $footerTextColor;
+$toolBarBorderColor: $toolBarTextColor;
+$articleBackgroundColor: #efefef;
+$postDescriprionBorderColor: $footerTextColor;
+$formBorderColor: $footerTextColor;
+$formBtnBg: $toolBarTextColor;
+
+//fonts
+%prymaryFont {
+    font-family: 'Helvetica', sans-serif;
+}
+
+%secondaryFont {
+    font-family: 'Arial', sans-serif;
+}
