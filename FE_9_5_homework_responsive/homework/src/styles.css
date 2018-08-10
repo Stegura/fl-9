@@ -1,0 +1,151 @@
+/*reset styles*/
+html,body,p,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+button,input{margin:0}
+input:focus{outline: none}
+html {box-sizing:border-box}
+/*main styles*/
+body {
+  background: #fff;
+  font-family: sans-serif;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+.menu_item {
+  border-bottom: 1px solid #ddd;
+  color: #5d5d5d;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 10px;
+}   
+.menu_item:focus {
+  color: #54597d;
+  font-weight: bold;
+  outline: none;    
+  padding: 10px;
+}
+main {
+  padding: 70px;
+}
+.main-title, 
+.article_title,
+.article_text,
+.article {
+  margin-bottom: 40px;
+}
+.main-title {
+  color: #000;
+  text-align: center;
+}
+.article_title {
+  color: #484747;
+}
+.article_text{
+  color: #5d5d5d;
+  text-align: justify;
+  text-indent: 1em;
+}
+.article_image {
+  max-width: 100%;
+}
+#scrlTopBtn {
+  background: #5ebcff;
+  box-sizing: border-box;
+  box-shadow: 6px 6px 20px 0px rgba(0,0,0,0.2);
+  border-radius: 50%;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+#scrlTopBtn:focus {
+  outline: none;
+}
+@media screen and (min-width: 574px) {
+  #scrlTopBtn {
+    display: none;
+  }
+  body {
+    background: #0a1223;
+  }
+  header {
+    padding-top: 10px;
+  }  
+  .menu {
+    flex-direction: row;
+    justify-content: center;  
+  }
+  .menu_item {
+    border-bottom: none;
+    padding: 10px;
+  }
+  .menu_item:focus {
+    font-weight: unset;
+  }
+  .menu_item:hover {
+    color: #54597d;
+  } 
+  main {
+    padding: 70px 30px;
+  }  
+  .main-title {
+    color: #ddd;
+  }
+  #moon_facts {
+    margin: 0 auto;
+    width: 430px;
+  }
+  .article_title {
+    color: #ddd;
+    position: relative;
+  }
+  .article_title:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(221,221,221,0), rgba(10,18,35,.7));
+  }
+  .article_text {
+    color: #5d5d5d;
+  }
+}
+@media screen and (min-width: 990px) {
+  .wraper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .menu_item:first-child {
+    margin-left: auto;
+  }
+  #moon_facts {
+    width: 900px;
+  }
+  .main-title {
+    font-size: 5vw;
+    margin-bottom: 80px;
+  }
+  .article {
+    align-items: stretch;
+    display: flex;
+    justify-content: space-between;
+  }
+  .article_desription {
+    width: 430px;
+  }
+  .article:nth-child(even) .article_desription {
+    order: 1;
+  }
+  .article_image {
+    width: 430px;
+    height: 100%;
+  }
+}
