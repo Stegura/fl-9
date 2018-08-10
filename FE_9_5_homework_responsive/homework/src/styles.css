@@ -135,7 +135,7 @@ main {
     margin-bottom: 80px;
   }
   .article {
-    align-items: stretch;
+    align-items: center;
     display: flex;
     justify-content: space-between;
   }
@@ -144,6 +144,9 @@ main {
   }
   .article:nth-child(even) .article_desription {
     order: 1;
+  }
+  .article_text {
+    margin-bottom: 0;
   }
   .article_image {
     width: 430px;
