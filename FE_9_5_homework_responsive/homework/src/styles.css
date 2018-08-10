@@ -120,11 +120,12 @@ main {
 }
 @media screen and (min-width: 990px) {
   .wraper {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
   }
-  .menu_item:first-child {
-    margin-left: auto;
+  .menu {
+    justify-content: flex-end;
+    padding: 0 10px;
   }
   #moon_facts {
     width: 900px;
