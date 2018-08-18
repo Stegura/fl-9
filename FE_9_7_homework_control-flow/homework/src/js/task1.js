@@ -1,19 +1,23 @@
 let login = prompt('Enter login','');
-if(login.length < 4) {
-    alert('I don\'t know any users having name length less than 4 symbols');
-} else {
-    switch(login) {
-        case 'User':
-            getPassword(prompt('Enter password',''));
-            break;
-        case '':
-            alert('Canceled')
-            break;
-        case null:
-            alert('Canceled')
-            break;
-        default:
-            alert('I don’t know you');
+switch(login) {
+    case 'User':
+        getPassword(prompt('Enter password',''));
+        break;
+    case '':
+        alert('Canceled')
+        break;
+    case null:
+        alert('Canceled')
+        break;
+    default:
+        checkLoginLenght(login.length);
+}
+
+function checkLoginLenght(userInputLenght) {
+    if(userInputLenght < 4) {
+        alert('I don\'t know any users having name length less than 4 symbols');
+    } else {
+        alert('I don’t know you');
     }
 }
 
