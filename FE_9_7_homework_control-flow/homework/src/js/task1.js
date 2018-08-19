@@ -1,39 +1,30 @@
-let login = prompt('Enter login','');
-switch(login) {
-    case 'User':
+let login = prompt('Enter login',''),
+    user = {
+        login: 'User',
+        password: 'SuperUser'
+    }
+
+if(isBlank(login)){
+    alert('Canceled'); 
+}else if (login === user.login) {
         getPassword(prompt('Enter password',''));
-        break;
-    case '':
-        alert('Canceled')
-        break;
-    case null:
-        alert('Canceled')
-        break;
-    default:
-        checkLoginLenght(login.length);
+} else if(login.length < 4) {
+    alert('I don\'t know any users having name length less than 4 symbols');
+} else {
+    alert('I don’t know you');
 }
 
-function checkLoginLenght(userInputLenght) {
-    if(userInputLenght < 4) {
-        alert('I don\'t know any users having name length less than 4 symbols');
-    } else {
-        alert('I don’t know you');
-    }
+function isBlank(blancString) {
+    return !blancString || /^\s*$/.test(blancString);
 }
 
 function getPassword(userInput) {
-    switch(userInput) {
-        case 'SuperUser':
-            sayHello();
-            break;
-        case '':
-            alert('Canceled')
-            break;
-        case null:
-            alert('Canceled')
-            break;
-        default:
-            alert('Wrong password')
+    if(isBlank(userInput)){
+        alert('Canceled'); 
+    } else if(userInput === user.password) {
+        sayHello();
+    } else {
+        alert('Wrong password');
     }
 }
 
