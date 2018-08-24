@@ -36,15 +36,12 @@ function filter(inputArray, filterFunc) {
 
 // task #5
 function getAdultAppleLovers(data) {
-    let newArray = [];
-
-    forEach(data, function(el){
-        if(el.favoriteFruit === 'apple' && el.age >= 18) {
-            newArray.push(el.name);
-        }
+    return map(
+        filter(data, function(el){
+        return el.favoriteFruit === 'apple' && el.age >= 18
+    }), function(el) {
+        return el.name
     })
-    
-    return newArray;
 }
 
 // task #6
