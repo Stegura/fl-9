@@ -10,7 +10,7 @@ function userCard(index) {
         transferLog.push({
             operationType: type,
             credits: amount,
-            operationTime: new Date().toLocaleString()
+            operationTime: new Date().toLocaleString('en-GB')
         })
     }
 
