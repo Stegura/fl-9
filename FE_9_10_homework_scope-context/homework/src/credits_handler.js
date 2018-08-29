@@ -71,6 +71,6 @@ function UserAccount(name) {
     };
 
     this.getCardByKey = function(key) {
-        return this.cards[key-1].getCardOptions();
+        return this.cards[key-1];
     }
 }
