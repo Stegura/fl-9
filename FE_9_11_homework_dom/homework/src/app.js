@@ -21,7 +21,6 @@ taskDescription.addEventListener('keyup', function(){
 // add event listener to add-button
 addTaskBtn.addEventListener('click', addTask);
 
-
 // add the task to task list
 function addTask() {
     if(taskList.length < taskListMaxLenght) {
@@ -62,8 +61,6 @@ function addTaskList(){
         checkArrayLenght();
     })
 
-
-
     for (let i = 0; i < taskList.length; i++) {
         span.innerHTML = taskList[i];
         newLi.draggable = true;
@@ -84,7 +81,6 @@ function checkArrayLenght() {
     span.innerHTML = 'Maximum item per list are created';
     span.setAttribute('id','notification');
 
-
     if(taskList.length < taskListMaxLenght) {
         taskDescription.disabled = false;
 
@@ -99,10 +95,7 @@ function checkArrayLenght() {
 }
 
 // Drag 'n' Drop functionality
-
 let dragItems = [];
-
-    // dragElement = null;
 
 function prepareToDnD() {
     dragItems = document.querySelectorAll('#list > li');
